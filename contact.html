@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Smart Tips for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-lightbulb"></i>
+                <span>SmartTips</span>ForKids
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="creative.html" class="nav-link">Creative</a>
+                <a href="games.html" class="nav-link">Games</a>
+                <a href="parents.html" class="nav-link">Parents</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="games.html" class="btn btn-primary">Play Now</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team. We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Get In Touch</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Nabua, Camarines Sur, Philippines<br>Education City, EC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
+                            <p>+63 917 456 7890<br>Monday-Friday, 9am-5pm EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>info@smarttipsforkids.com<br>support@smarttipsforkids.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office Hours</h4>
+                            <p>Monday-Friday: 9am-5pm EST<br>Saturday: 10am-2pm EST<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <h3 style="margin-bottom: 20px;">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Send Us a Message</h2>
+                    <p style="margin-bottom: 30px; color: var(--gray);">Have questions, suggestions, or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 600;">Subject *</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback/Suggestions</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="press">Press/Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">Message *</label>
+                            <textarea id="message" class="form-control" placeholder="Your message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div style="display: flex; align-items: flex-start;">
+                                <input type="checkbox" id="newsletter" style="margin-right: 10px; margin-top: 5px;">
+                                <label for="newsletter" style="font-size: 14px; color: var(--gray);">
+                                    Subscribe to our newsletter for educational tips, activity ideas, and updates
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 18px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Common Questions</h6>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="parents-guide">
+                <div class="faq-item" style="margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid var(--light-gray);">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">Is Smart Tips for Kids free to use?</h3>
+                    <p>Yes! Our basic platform is completely free. We offer premium features for a small monthly subscription, but all core educational content, games, and activities are available at no cost.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid var(--light-gray);">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">What age range is your content designed for?</h3>
+                    <p>Our content is designed for children ages 3-10. We categorize activities, games, and stories by age group to ensure they're developmentally appropriate. Each item is clearly marked with the recommended age range.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid var(--light-gray);">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">Do you have content for children with special needs?</h3>
+                    <p>Yes, we're committed to inclusivity. Many of our activities can be adapted for different learning needs. We're continuously working with special education experts to expand our accessible content. Contact us for specific recommendations.</p>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid var(--light-gray);">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">Can I submit my own activity or game idea?</h3>
+                    <p>Absolutely! We love hearing from educators, parents, and creative minds. Use the contact form above to share your ideas. If we use your suggestion, we'll give you credit and a free premium subscription.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">How can I get involved as a volunteer or contributor?</h3>
+                    <p>We welcome volunteers for content review, testing with children, and translation. We also accept guest blog posts from qualified educators and child development experts. Email us at contribute@smarttipsforkids.com for more information.</p>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div class="cta" style="margin-top: 80px; border-radius: var(--radius);">
+                <div class="container cta-container">
+                    <div class="cta-content">
+                        <h2>Stay Updated</h2>
+                        <p>Subscribe to our newsletter for the latest activities, educational tips, and platform updates.</p>
+                    </div>
+                    <div class="cta-button">
+                        <form id="newsletterForm" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your email address" class="form-control" style="flex: 1; min-width: 200px;" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>SmartTips</span>ForKids
+                    </a>
+                    <p>Making learning fun and engaging for children everywhere. Join our educational adventure today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="parents.html">For Parents</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="creative.html">Creative Corner</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Nabua, Camarines Sur, Philippines</li>
+                        <li><i class="fas fa-phone"></i> +63 917 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@smarttipsforkids.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Smart Tips for Kids. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Contact form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Simple validation
+                    if (!name || !email || !subject || !message) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert('Thank you for your message! We will get back to you within 2 business days.');
+                        contactForm.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 1500);
+                });
+            }
+            
+            // Newsletter form submission
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const emailInput = this.querySelector('input[type="email"]');
+                    
+                    if (emailInput.value) {
+                        // Email validation
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailRegex.test(emailInput.value)) {
+                            alert('Please enter a valid email address.');
+                            return;
+                        }
+                        
+                        // Simulate form submission
+                        const submitBtn = this.querySelector('button[type="submit"]');
+                        const originalText = submitBtn.textContent;
+                        submitBtn.textContent = 'Subscribing...';
+                        submitBtn.disabled = true;
+                        
+                        setTimeout(() => {
+                            alert('Thank you for subscribing to our newsletter!');
+                            emailInput.value = '';
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                        }, 1500);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

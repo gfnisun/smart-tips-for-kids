@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - Smart Tips for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-lightbulb"></i>
+                <span>SmartTips</span>ForKids
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="creative.html" class="nav-link">Creative</a>
+                <a href="games.html" class="nav-link">Games</a>
+                <a href="parents.html" class="nav-link">Parents</a>
+                <a href="stories.html" class="nav-link active">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="games.html" class="btn btn-primary">Play Now</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Stories</h1>
+            <p>Interactive stories that spark imagination and build reading skills</p>
+        </div>
+    </section>
+
+    <!-- Stories Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Story Categories -->
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">All Stories</button>
+                <button class="filter-btn" data-filter="bedtime">Bedtime Stories</button>
+                <button class="filter-btn" data-filter="educational">Educational Stories</button>
+                <button class="filter-btn" data-filter="interactive">Interactive Stories</button>
+                <button class="filter-btn" data-filter="fairytale">Fairy Tales</button>
+                <button class="filter-btn" data-filter="original">Original Stories</button>
+            </div>
+            
+            <!-- Stories Grid -->
+            <div class="stories-grid">
+                <div class="story-card" data-category="bedtime interactive">
+                    <div class="story-image">
+                        <img src="https://i.ytimg.com/vi/BZjGviDssvo/maxresdefault.jpg" alt="The Sleepy Moon">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-book"></i> Bedtime Story</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Sleepy Moon's Adventure</h3>
+                        <p>Follow the moon as it travels across the night sky, meeting stars and helping sleepy animals settle down for the night. Interactive elements let children choose what happens next.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="educational">
+                    <div class="story-image">
+                        <img src="https://m.media-amazon.com/images/I/71+DI-+cd2L._SL1500_.jpg" alt="The Curious Seed">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-seedling"></i> Science Story</span>
+                        <span><i class="fas fa-clock"></i> 8 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Curious Seed</h3>
+                        <p>Learn about plant life cycles through the journey of a tiny seed that grows into a beautiful flower. Includes simple science facts woven into the narrative.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="fairytale interactive">
+                    <div class="story-image">
+                        <img src="https://img.freepik.com/premium-photo/friendly-dragons-playing-forest-ai-generated-illustration_1203568-9795.jpg?w=2000" alt="The Three Friendly Dragons">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-dragon"></i> Fairy Tale</span>
+                        <span><i class="fas fa-clock"></i> 10 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Three Friendly Dragons</h3>
+                        <p>A modern twist on classic dragon tales where three dragons learn to use their unique abilities to help their forest friends. Children make choices that affect the story's outcome.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 6+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="original educational">
+                    <div class="story-image">
+                        <img src="https://i.ytimg.com/vi/vs8lQ2JPD2g/maxresdefault.jpg" alt="The Number Garden">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-calculator"></i> Math Story</span>
+                        <span><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Number Garden</h3>
+                        <p>Explore a magical garden where numbers come to life! Count flowers, add butterflies, and subtract raindrops in this engaging math adventure.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="bedtime original">
+                    <div class="story-image">
+                        <img src="https://www.creativeparamita.com/wp-content/uploads/2023/03/The-Dream-Weaver.jpg" alt="The Dream Weaver">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-moon"></i> Bedtime Story</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Dream Weaver</h3>
+                        <p>A gentle story about a tiny spider who weaves beautiful dreams for sleeping children. Soothing rhythm and repetition make it perfect for bedtime.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="educational interactive">
+                    <div class="story-image">
+                        <img src="https://m.media-amazon.com/images/I/81ce5vf1DSL._SL1500_.jpg" alt="The Alphabet Zoo">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-language"></i> Language Story</span>
+                        <span><i class="fas fa-clock"></i> 12 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Alphabet Zoo</h3>
+                        <p>Visit animals from A to Z in this interactive alphabet adventure. Children can click on letters to hear sounds and discover animal facts.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="fairytale">
+                    <div class="story-image">
+                        <img src="https://m.media-amazon.com/images/I/71BHF+RbQ+L.jpg" alt="The Kindness Princess">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-crown"></i> Fairy Tale</span>
+                        <span><i class="fas fa-clock"></i> 9 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Kindness Princess</h3>
+                        <p>A princess discovers that true royalty comes from kindness and helping others, not from jewels or castles. Teaches empathy and compassion.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card" data-category="original interactive">
+                    <div class="story-image">
+                        <img src="https://m.media-amazon.com/images/I/71D11mPaZhL._SL1250_.jpg" alt="The Colorful Feelings Monster">
+                    </div>
+                    <div class="story-meta">
+                        <span><i class="fas fa-heart"></i> Emotional Learning</span>
+                        <span><i class="fas fa-clock"></i> 8 min read</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Colorful Feelings Monster</h3>
+                        <p>A friendly monster changes colors with different emotions, helping children identify and understand their feelings. Interactive elements let children choose how the monster responds.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                            <a href="#" class="btn btn-primary">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Storytime Tips -->
+            <div class="parents-guide" style="margin-top: 80px;">
+                <h2>Making Storytime Magical: Tips for Parents</h2>
+                
+                <div style="margin-top: 25px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Create a Cozy Reading Nook</h3>
+                    <p>Designate a special spot for reading with comfortable pillows, good lighting, and easy access to books. This makes storytime a special ritual children look forward to.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 15px;">Use Different Voices</h3>
+                    <p>Give each character a distinct voice to bring stories to life. You don't need to be a voice actor - even simple changes in pitch or speed make characters more memorable.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 15px;">Ask Questions</h3>
+                    <p>Pause during the story to ask predictive questions ("What do you think will happen next?") or reflective questions ("How would you feel if that happened to you?"). This builds comprehension and critical thinking.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 15px;">Connect Stories to Real Life</h3>
+                    <p>Help children make connections between story events and their own experiences. "Remember when we went to the beach like the character in the story?"</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 15px;">Encourage Participation</h3>
+                    <p>For familiar stories, pause and let children fill in words or phrases. For interactive stories, let them make the choices about what happens next.</p>
+                </div>
+            </div>
+            
+            <!-- Create Your Own Story -->
+            <div class="cta" style="margin-top: 80px; border-radius: var(--radius);">
+                <div class="container cta-container">
+                    <div class="cta-content">
+                        <h2>Create Your Own Story</h2>
+                        <p>Use our story builder tool to create personalized stories with your child as the main character!</p>
+                    </div>
+                    <div class="cta-button">
+                        <a href="#" class="btn btn-primary">Start Creating</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reading Level Guide -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Reading Development</h6>
+                <h2 class="section-title">Reading Milestones by Age</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Ages 3-4</h3>
+                    <p>Recognizes some letters, enjoys rhyming, listens to short stories, turns pages, pretends to read.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Ages 5-6</h3>
+                    <p>Recognizes all letters and sounds, reads simple words, retells stories, predicts what happens next.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Ages 7-8</h3>
+                    <p>Reads independently, understands chapter books, uses context clues, reads with expression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>SmartTips</span>ForKids
+                    </a>
+                    <p>Making learning fun and engaging for children everywhere. Join our educational adventure today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="parents.html">For Parents</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="creative.html">Creative Corner</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Nabua, Camarines Sur, Philippines</li>
+                        <li><i class="fas fa-phone"></i> +63 917 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@smarttipsforkids.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Smart Tips for Kids. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Add story filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const storyCards = document.querySelectorAll('.story-card');
+            
+            if (filterButtons.length > 0 && storyCards.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        
+                        // Add active class to clicked button
+                        this.classList.add('active');
+                        
+                        const filterValue = this.getAttribute('data-filter');
+                        
+                        // Show/hide story cards based on filter
+                        storyCards.forEach(card => {
+                            const categories = card.getAttribute('data-category');
+                            
+                            if (filterValue === 'all' || categories.includes(filterValue)) {
+                                card.style.display = 'block';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, 10);
+                            } else {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(20px)';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
+                            }
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

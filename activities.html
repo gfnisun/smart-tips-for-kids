@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Smart Tips for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-lightbulb"></i>
+                <span>SmartTips</span>ForKids
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="activities.html" class="nav-link active">Activities</a>
+                <a href="creative.html" class="nav-link">Creative</a>
+                <a href="games.html" class="nav-link">Games</a>
+                <a href="parents.html" class="nav-link">Parents</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="games.html" class="btn btn-primary">Play Now</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Activities</h1>
+            <p>Engaging educational activities for children of all ages</p>
+        </div>
+    </section>
+
+    <!-- Activities Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Activity Categories -->
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">All Activities</button>
+                <button class="filter-btn" data-filter="arts">Arts & Crafts</button>
+                <button class="filter-btn" data-filter="science">Science</button>
+                <button class="filter-btn" data-filter="language">Language</button>
+                <button class="filter-btn" data-filter="math">Math</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+            </div>
+            
+            <!-- Arts & Crafts Activities -->
+            <div class="section-header" id="arts">
+                <h6 class="section-subtitle">Creative Learning</h6>
+                <h2 class="section-title">Arts & Crafts Activities</h2>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card" data-category="arts">
+                    <div class="activity-image">
+                        <img src="https://www.friendsartlab.com/wp-content/uploads/2022/11/Finger-Paint-Color-Mixing-Activity-Featured-Image-1200.png" alt="Finger Painting">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Finger Painting Fun</h3>
+                        <p>Explore colors and textures with this messy but creative activity. Perfect for developing fine motor skills.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 20-30 mins</span>
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="arts">
+                    <div class="activity-image">
+                        <img src="https://i.pinimg.com/originals/81/0e/fb/810efb20471923e6308e09b77e4f74f7.jpg" alt="Paper Crafts">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Paper Plate Animals</h3>
+                        <p>Transform simple paper plates into colorful animals. Great for learning about animals and recycling.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 30-45 mins</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="arts">
+                    <div class="activity-image">
+                        <img src="https://pandaeventplanner.com/wp-content/uploads/2023/07/claymolding.jpg" alt="Clay Modeling">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Clay Modeling</h3>
+                        <p>Sculpt with playdough or clay to create 3D shapes and figures. Enhances spatial awareness and creativity.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 45-60 mins</span>
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Science Activities -->
+            <div class="section-header" id="science" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Explore & Discover</h6>
+                <h2 class="section-title">Science Activities</h2>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card" data-category="science">
+                    <div class="activity-image">
+                        <img src="https://www.treehugger.com/thmb/oaifB85L0KMValKJ2wkXEp_BbOM=/2143x1361/filters:no_upscale()/GettyImages-175499286-dd3fec20dc3f4bd39c018e6db097881c.jpg" alt="Volcano Experiment">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Baking Soda Volcano</h3>
+                        <p>Create a chemical reaction with baking soda and vinegar. Learn about acids, bases, and reactions.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 30-40 mins</span>
+                            <span><i class="fas fa-user"></i> Age 6+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="science">
+                    <div class="activity-image">
+                        <img src="https://i.pinimg.com/originals/be/90/71/be9071e6651cdb745edfc539191faca6.jpg" alt="Rainbow in a Jar">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Rainbow in a Jar</h3>
+                        <p>Layer different liquids to create a rainbow effect. Teaches about density and liquid properties.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 20-30 mins</span>
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="science">
+                    <div class="activity-image">
+                        <img src="https://giyplants.com/wp-content/uploads/2023/08/phases-of-the-seed-germination-process-1.webp" alt="Plant Growth">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Seed Germination</h3>
+                        <p>Plant seeds and watch them grow. Learn about plant life cycles and what plants need to survive.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> Ongoing project</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Language Activities -->
+            <div class="section-header" id="language" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Read & Write</h6>
+                <h2 class="section-title">Language Activities</h2>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card" data-category="language">
+                    <div class="activity-image">
+                        <img src="https://3.bp.blogspot.com/-_MyF8Mqhh-o/UedHtIpYyfI/AAAAAAAAANo/4VI5hJXJM1M/s1600/title+page+SBM.jpg" alt="Story Writing">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Create Your Own Storybook</h3>
+                        <p>Write and illustrate a simple story. Develops writing skills, creativity, and sequencing.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 60+ mins</span>
+                            <span><i class="fas fa-user"></i> Age 7+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="language">
+                    <div class="activity-image">
+                        <img src="https://thesavvysparrow.com/wp-content/uploads/2022/10/alphabet-scavenger-hunt-for-kids-2-1024x1024.jpg" alt="Alphabet Games">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Alphabet Treasure Hunt</h3>
+                        <p>Find objects around the house that start with each letter of the alphabet. Builds vocabulary.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 30-45 mins</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="language">
+                    <div class="activity-image">
+                        <img src="https://i.pinimg.com/originals/ee/e5/bf/eee5bf5dc74a8d341d0ffb6c852170a2.jpg" alt="Rhyming Games">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Rhyming Word Match</h3>
+                        <p>Match words that rhyme to develop phonemic awareness and prepare for reading.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 15-20 mins</span>
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Math Activities -->
+            <div class="section-header" id="math" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Count & Calculate</h6>
+                <h2 class="section-title">Math Activities</h2>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card" data-category="math">
+                    <div class="activity-image">
+                        <img src="https://frugalfun4boys.com/wp-content/uploads/2020/08/Lego-Math-Round-Up-FB-1536x1536.jpg" alt="Counting with Legos">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Lego Math</h3>
+                        <p>Use Lego bricks for counting, sorting, and basic addition and subtraction.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 20-30 mins</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="math">
+                    <div class="activity-image">
+                        <img src="https://birdsend.s3.amazonaws.com/forms/Ao3bQqpJJeUL2CEYdDfLjCNhM8YKWsGX8xKKYhiQ.jpg" alt="Shape Hunt">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Shape Scavenger Hunt</h3>
+                        <p>Find different shapes in your environment. Teaches shape recognition and geometry basics.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 15-25 mins</span>
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-category="math">
+                    <div class="activity-image">
+                        <img src="https://i.pinimg.com/originals/9d/a9/15/9da91598d6df0e97f89f1f6c3caf10a5.jpg" alt="Measuring Activities">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Kitchen Measurements</h3>
+                        <p>Practice measuring ingredients while cooking. Introduces fractions and volume concepts.</p>
+                        <div class="activity-meta">
+                            <span><i class="fas fa-clock"></i> 30-45 mins</span>
+                            <span><i class="fas fa-user"></i> Age 6+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 10px;">View Instructions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Download Activity Pack -->
+            <div class="cta" style="margin-top: 80px; border-radius: var(--radius);">
+                <div class="container cta-container">
+                    <div class="cta-content">
+                        <h2>Download Our Activity Pack</h2>
+                        <p>Get our free printable activity pack with 20+ educational activities for kids ages 3-10.</p>
+                    </div>
+                    <div class="cta-button">
+                        <a href="#" class="btn btn-primary">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>SmartTips</span>ForKids
+                    </a>
+                    <p>Making learning fun and engaging for children everywhere. Join our educational adventure today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="parents.html">For Parents</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="creative.html">Creative Corner</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Nabua, Camarines Sur, Philippines</li>
+                        <li><i class="fas fa-phone"></i> +63 917 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@smarttipsforkids.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Smart Tips for Kids. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

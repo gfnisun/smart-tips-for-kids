@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Games - Smart Tips for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for games filtering */
+        .game-item {
+            transition: all 0.4s ease;
+            display: block;
+        }
+        
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 140, 255, 0.3);
+        }
+        
+        .game-item .btn-primary {
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-lightbulb"></i>
+                <span>SmartTips</span>ForKids
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="creative.html" class="nav-link">Creative</a>
+                <a href="games.html" class="nav-link active">Games</a>
+                <a href="parents.html" class="nav-link">Parents</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#memory-game" class="btn btn-primary">Play Now</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Educational Games</h1>
+            <p>Fun games that teach important skills while entertaining your child</p>
+        </div>
+    </section>
+
+    <!-- Games Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Game Categories -->
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="math">Math Games</button>
+                <button class="filter-btn" data-filter="reading">Reading Games</button>
+                <button class="filter-btn" data-filter="science">Science Games</button>
+                <button class="filter-btn" data-filter="puzzle">Puzzle Games</button>
+                <button class="filter-btn" data-filter="memory">Memory Games</button>
+            </div>
+            
+            <!-- Games Grid -->
+            <div class="games-container" id="gamesContainer">
+                <div class="game-item" data-category="math">
+                    <img src="https://th.bing.com/th/id/OIP.uS-binFwe6Ep_ooIEBOC0wHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Math Adventure Game">
+                    <div class="game-info">
+                        <h3>Number Ninja</h3>
+                        <p>Slice the correct numbers to solve math problems. Improves calculation speed and accuracy.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 10-15 mins</span>
+                            <span><i class="fas fa-user"></i> Age 6+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="reading">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.UbX3ir2CpLAHfAimrvZ-YwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Word Wizard Game">
+                    <div class="game-info">
+                        <h3>Word Wizard</h3>
+                        <p>Build words from letter tiles. Expands vocabulary and spelling skills for early readers.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 15-20 mins</span>
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="science">
+                    <img src="https://ecdn.teacherspayteachers.com/thumbitem/Animal-Habitats-Matching-Activity-Animals-and-Their-Habitats-Shadow-Matching-11994161-1723113355/original-11994161-1.jpg" alt="Science Explorer Game">
+                    <div class="game-info">
+                        <h3>Science Explorer</h3>
+                        <p>Match animals to their habitats and learn about ecosystems and animal adaptations.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 20-25 mins</span>
+                            <span><i class="fas fa-user"></i> Age 7+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="puzzle">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.CN_F5LGC9zDVFs-kchvSZwHaFt?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pattern Puzzle Game">
+                    <div class="game-info">
+                        <h3>Pattern Puzzles</h3>
+                        <p>Complete the pattern sequences. Develops logical thinking and pattern recognition.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 10-15 mins</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="memory">
+                    <img src="https://i.etsystatic.com/26407415/r/il/8dfb5b/2820256829/il_fullxfull.2820256829_bfhe.jpg" alt="Memory Match Game">
+                    <div class="game-info">
+                        <h3>Memory Match</h3>
+                        <p>Find matching pairs of cards. Improves concentration and short-term memory skills.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 5-10 mins</span>
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                        </div>
+                        <a href="#memory-game" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="math">
+                    <img src="https://tricountytherapy.com/wp-content/uploads/2019/01/IMG-9528.jpg" alt="Shape Sorter Game">
+                    <div class="game-info">
+                        <h3>Shape Sorter</h3>
+                        <p>Match shapes to their correct slots. Teaches geometry basics and spatial awareness.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 10-15 mins</span>
+                            <span><i class="fas fa-user"></i> Age 3+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="reading">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/482c1ee9b43554a880c0a61f83d66686c17d13035ddd9400060b1473a263cd6b.jpg" alt="Phonics Fun Game">
+                    <div class="game-info">
+                        <h3>Phonics Fun</h3>
+                        <p>Match letters to their sounds. Builds phonemic awareness for beginning readers.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 15-20 mins</span>
+                            <span><i class="fas fa-user"></i> Age 4+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+                
+                <div class="game-item" data-category="science">
+                    <img src="https://static.vecteezy.com/system/resources/previews/008/940/792/original/match-your-clothes-with-the-weather-children-s-educational-game-vector.jpg" alt="Weather Wizard Game">
+                    <div class="game-info">
+                        <h3>Weather Wizard</h3>
+                        <p>Learn about different weather patterns and match clothing to appropriate weather conditions.</p>
+                        <div class="game-meta">
+                            <span><i class="fas fa-clock"></i> 15-20 mins</span>
+                            <span><i class="fas fa-user"></i> Age 5+</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Play Game</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Games Message -->
+            <div id="noGamesMessage" style="display: none; text-align: center; padding: 40px; background-color: var(--light-gray); border-radius: var(--radius); margin: 20px 0;">
+                <i class="fas fa-gamepad" style="font-size: 48px; color: var(--gray); margin-bottom: 20px;"></i>
+                <h3>No games found in this category</h3>
+                <p>Try selecting a different category or check back soon for new games!</p>
+            </div>
+            
+            <!-- Interactive Memory Game -->
+            <div class="memory-game-container" id="memory-game">
+                <div class="memory-game-header">
+                    <h3>Animal Memory Match Game</h3>
+                    <p>Flip the cards to find matching pairs. Try to complete the game in as few moves as possible!</p>
+                </div>
+                
+                <div class="memory-game-stats">
+                    <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px;">
+                        <div>Moves: <span class="memory-moves">0</span></div>
+                        <div>Time: <span class="memory-timer">0:00</span></div>
+                        <div>Pairs Found: <span class="memory-pairs">0/8</span></div>
+                    </div>
+                    <button class="btn btn-secondary restart-game" style="display: none;">Restart Game</button>
+                </div>
+                
+                <div class="memory-game-grid" id="memoryGame">
+                    <!-- Memory cards will be generated by JavaScript -->
+                </div>
+                
+                <div class="memory-game-instructions" style="margin-top: 30px; text-align: center; color: var(--gray);">
+                    <h4>How to Play:</h4>
+                    <p>Click on a card to flip it over. Try to find two cards with the same animal. Match all 8 pairs to win!</p>
+                </div>
+            </div>
+            
+            <!-- Game Benefits -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h6 class="section-subtitle">Learning Benefits</h6>
+                <h2 class="section-title">How Games Help Children Learn</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Cognitive Development</h3>
+                    <p>Games improve memory, attention, and problem-solving skills through interactive challenges.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Academic Skills</h3>
+                    <p>Educational games reinforce math, reading, and science concepts in a fun, engaging way.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Fine Motor Skills</h3>
+                    <p>Clicking, dragging, and tapping actions help develop hand-eye coordination and fine motor control.</p>
+                </div>
+            </div>
+            
+            <!-- Game Recommendations by Age -->
+            <div class="parents-guide" style="margin-top: 80px;">
+                <h2>Game Recommendations by Age Group</h2>
+                
+                <div style="margin-top: 25px;">
+                    <h3 style="color: var(--primary);">Ages 3-4</h3>
+                    <p>Simple matching games, basic shape and color games, short memory games with familiar objects.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 20px;">Ages 5-6</h3>
+                    <p>Beginning math games (counting, simple addition), phonics games, pattern completion games.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 20px;">Ages 7-8</h3>
+                    <p>More complex math games, reading comprehension games, science exploration games.</p>
+                    
+                    <h3 style="color: var(--primary); margin-top: 20px;">Ages 9-10</h3>
+                    <p>Strategy games, problem-solving puzzles, educational adventure games with multiple levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>SmartTips</span>ForKids
+                    </a>
+                    <p>Making learning fun and engaging for children everywhere. Join our educational adventure today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="parents.html">For Parents</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="creative.html">Creative Corner</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Nabua, Camarines Sur, Philippines</li>
+                        <li><i class="fas fa-phone"></i> +63 917 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@smarttipsforkids.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Smart Tips for Kids. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Games Filtering Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const gameItems = document.querySelectorAll('.game-item');
+            const noGamesMessage = document.getElementById('noGamesMessage');
+            
+            if (filterButtons.length > 0 && gameItems.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        
+                        // Add active class to clicked button
+                        this.classList.add('active');
+                        
+                        const filterValue = this.getAttribute('data-filter');
+                        let visibleCount = 0;
+                        
+                        // Show/hide game items based on filter
+                        gameItems.forEach(item => {
+                            const category = item.getAttribute('data-category');
+                            
+                            if (filterValue === 'all' || category === filterValue) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateY(0)';
+                                }, 10);
+                                visibleCount++;
+                            } else {
+                                item.style.opacity = '0';
+                                item.style.transform = 'translateY(20px)';
+                                setTimeout(() => {
+                                    item.style.display = 'none';
+                                }, 300);
+                            }
+                        });
+                        
+                        // Show/hide no games message
+                        if (noGamesMessage) {
+                            if (visibleCount === 0) {
+                                noGamesMessage.style.display = 'block';
+                            } else {
+                                noGamesMessage.style.display = 'none';
+                            }
+                        }
+                        
+                        // Scroll to games section
+                        document.getElementById('gamesContainer').scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    });
+                });
+            }
+            
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Initialize memory game if it exists
+            const memoryGame = document.getElementById('memoryGame');
+            if (memoryGame) {
+                // Initialize memory game cards
+                const cards = [
+                    { id: 1, emoji: '🐶', name: 'Dog' },
+                    { id: 2, emoji: '🐱', name: 'Cat' },
+                    { id: 3, emoji: '🐭', name: 'Mouse' },
+                    { id: 4, emoji: '🐹', name: 'Hamster' },
+                    { id: 5, emoji: '🐰', name: 'Rabbit' },
+                    { id: 6, emoji: '🦊', name: 'Fox' },
+                    { id: 7, emoji: '🐻', name: 'Bear' },
+                    { id: 8, emoji: '🐼', name: 'Panda' }
+                ];
+                
+                const gameCards = [...cards, ...cards];
+                gameCards.sort(() => Math.random() - 0.5);
+                
+                const gameContainer = document.querySelector('.memory-game-grid');
+                const movesElement = document.querySelector('.memory-moves');
+                const timerElement = document.querySelector('.memory-timer');
+                const pairsElement = document.querySelector('.memory-pairs');
+                
+                if (gameContainer) {
+                    gameContainer.innerHTML = '';
+                    
+                    gameCards.forEach((card, index) => {
+                        const cardElement = document.createElement('div');
+                        cardElement.className = 'memory-card';
+                        cardElement.dataset.id = card.id;
+                        cardElement.dataset.index = index;
+                        
+                        cardElement.innerHTML = `
+                            <div class="card-front">?</div>
+                            <div class="card-back">${card.emoji}</div>
+                        `;
+                        
+                        cardElement.style.animationDelay = `${index * 0.05}s`;
+                        cardElement.addEventListener('click', () => flipCard(cardElement));
+                        gameContainer.appendChild(cardElement);
+                    });
+                }
+                
+                let firstCard = null;
+                let secondCard = null;
+                let lockBoard = false;
+                let matchedPairs = 0;
+                let moves = 0;
+                let seconds = 0;
+                let timer;
+                
+                // Start timer
+                startTimer();
+                
+                function flipCard(card) {
+                    if (lockBoard || card === firstCard || card.classList.contains('matched')) {
+                        return;
+                    }
+                    
+                    card.classList.add('flipped');
+                    moves++;
+                    
+                    if (movesElement) {
+                        movesElement.textContent = moves;
+                    }
+                    
+                    if (!firstCard) {
+                        firstCard = card;
+                        return;
+                    }
+                    
+                    secondCard = card;
+                    lockBoard = true;
+                    
+                    checkForMatch();
+                }
+                
+                function checkForMatch() {
+                    const isMatch = firstCard.dataset.id === secondCard.dataset.id;
+                    
+                    if (isMatch) {
+                        disableCards();
+                        matchedPairs++;
+                        
+                        if (pairsElement) {
+                            pairsElement.textContent = `${matchedPairs}/8`;
+                        }
+                        
+                        if (matchedPairs === 8) {
+                            clearInterval(timer);
+                            setTimeout(() => {
+                                const minutes = Math.floor(seconds / 60);
+                                const remainingSeconds = seconds % 60;
+                                const timeString = `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+                                alert(`🎉 Congratulations! You matched all ${matchedPairs} pairs in ${moves} moves and ${timeString}! 🎉`);
+                                const restartBtn = document.querySelector('.restart-game');
+                                if (restartBtn) restartBtn.style.display = 'inline-block';
+                            }, 500);
+                        }
+                    } else {
+                        unflipCards();
+                    }
+                }
+                
+                function disableCards() {
+                    firstCard.classList.add('matched');
+                    secondCard.classList.add('matched');
+                    firstCard.classList.add('flipped');
+                    secondCard.classList.add('flipped');
+                    
+                    resetBoard();
+                }
+                
+                function unflipCards() {
+                    setTimeout(() => {
+                        firstCard.classList.remove('flipped');
+                        secondCard.classList.remove('flipped');
+                        resetBoard();
+                    }, 1000);
+                }
+                
+                function resetBoard() {
+                    [firstCard, secondCard, lockBoard] = [null, null, false];
+                }
+                
+                function startTimer() {
+                    timer = setInterval(() => {
+                        seconds++;
+                        if (timerElement) {
+                            const minutes = Math.floor(seconds / 60);
+                            const remainingSeconds = seconds % 60;
+                            timerElement.textContent = `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+                        }
+                    }, 1000);
+                }
+                
+                const restartBtn = document.querySelector('.restart-game');
+                if (restartBtn) {
+                    restartBtn.style.display = 'none';
+                    restartBtn.addEventListener('click', () => {
+                        clearInterval(timer);
+                        // Re-initialize the game
+                        location.reload();
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
